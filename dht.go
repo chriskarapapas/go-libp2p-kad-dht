@@ -166,7 +166,7 @@ var (
 // we successfully get a query response from it OR if it send us a query.
 func New(ctx context.Context, h host.Host, options ...Option) (*IpfsDHT, error) {
 	var cfg dhtcfg.Config
-	fmt.Println("Asfist")
+	mt.Println("Asfist")
 	if err := cfg.Apply(append([]Option{dhtcfg.Defaults}, options...)...); err != nil {
 		return nil, err
 	}
